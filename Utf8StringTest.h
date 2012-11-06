@@ -72,6 +72,10 @@ class Utf8StringTest{
             print_as_binary( cout, Utf8String('a') );
             cout << endl;
 
+
+            cout << "Output should be e " << Utf8String("hello",5).getAsciiCharacterAtIndex( 1 ) << endl;
+
+
         }
 
 };
