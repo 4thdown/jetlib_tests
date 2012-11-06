@@ -67,6 +67,11 @@ class Utf8StringTest{
             cout << Utf8String("hello",5) << Utf8String(" world",6) << endl;
 
 
+            //test the print as binary friend function (and the character constructor)
+            cout << "Output should be 01100001 ";
+            print_as_binary( cout, Utf8String('a') );
+            cout << endl;
+
         }
 
 };
