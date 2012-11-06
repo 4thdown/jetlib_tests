@@ -76,6 +76,15 @@ class Utf8StringTest{
             cout << "Output should be e " << Utf8String("hello",5).getAsciiCharacterAtIndex( 1 ) << endl;
 
 
+            const char test_character = 'a';
+
+            Utf8String my_super_string( "hello" );
+            cout << "Output should be a " << Utf8String(test_character) << endl;
+            cout << "Output should be aa " << Utf8String(test_character) + test_character << endl;
+            my_super_string += test_character;
+            cout << "Output should be helloa " << my_super_string << endl;
+
+
         }
 
 };
