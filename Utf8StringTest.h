@@ -84,6 +84,8 @@ class Utf8StringTest{
             my_super_string += test_character;
             cout << "Output should be helloa " << my_super_string << endl;
 
+            cout << "Output should be Hello9ThereBilly " << Utf8String("hello9_there_billy").toCamelCase() << endl;
+            cout << "Output should be 9helloThereBilly " << Utf8String("9hello_there_billy").toCamelCase() << endl;
 
         }
 
