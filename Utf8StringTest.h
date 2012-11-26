@@ -90,6 +90,10 @@ class Utf8StringTest{
             cout << "Output should be i'm lower case " << Utf8String("I'm Lower Case").toLowerCase() << endl;
             cout << "Output should be I'M UPPER CASE " << Utf8String("I'm Upper Case").toUpperCase() << endl;
 
+            //string concatenation chaining with the + operator
+            cout << "Output should be abcdef " << Utf8String("a") + Utf8String("bc") + Utf8String("d") + Utf8String("ef") << endl;
+
+
         }
 
 };
