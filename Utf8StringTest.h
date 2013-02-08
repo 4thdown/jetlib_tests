@@ -51,6 +51,15 @@ class Utf8StringTest{
             new_string = string_a + new_string4;
             cout << "Size should be 25: " << new_string.getSize() << endl;
 
+            // += concatenator operator with char *
+            Utf8String new_string5( "123456789", 9 );
+            new_string5 += "0abcdef";
+            cout << "Should be 1234567890abcdef: " << new_string5 << endl;
+
+            // + concatenator operator with char *
+            new_string5 = Utf8String("123") + "abc";
+            cout << "Should be 123abc: " << new_string5 << endl;
+
 
             //concatenator operator 2
             //Utf8String new_string2 = string_a + my_string + new_string;
@@ -61,7 +70,6 @@ class Utf8StringTest{
 
             //ostream << operator with + operator
             cout << Utf8String("hello",5) + Utf8String(" world",6) << endl;
-
 
             //ostream << operator with << operator
             cout << Utf8String("hello",5) << Utf8String(" world",6) << endl;
