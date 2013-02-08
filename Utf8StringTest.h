@@ -68,6 +68,9 @@ class Utf8StringTest{
             cout << "Should be abc123q: " << new_string5 << endl;
 
 
+            Utf8String shell_argument_example( "I'm a little teapot." );
+            cout << "Should be 'I\\'m a little teapot.': " << shell_argument_example.escapeShellArgument() << endl;
+
             //concatenator operator 2
             //Utf8String new_string2 = string_a + my_string + new_string;
             //cout << "Size should be 44: " << new_string2.getSize() << endl;
@@ -83,8 +86,13 @@ class Utf8StringTest{
 
 
             //test the print as binary friend function (and the character constructor)
-            cout << "Output should be 01100001 ";
+            cout << "Output should be 0110000100000000 ";
             print_as_binary( cout, Utf8String('a') );
+            cout << endl;
+
+            //test the print as hex friend function
+            cout << "Output should be 68656C6C6F6100 ";
+            print_as_hex( cout, Utf8String("helloa") );
             cout << endl;
 
 
