@@ -61,6 +61,13 @@ class Utf8StringTest{
             cout << "Should be 123abc: " << new_string5 << endl;
 
 
+            new_string5 = "abc" + Utf8String("123");
+            cout << "Should be abc123: " << new_string5 << endl;
+
+            new_string5 = "abc" += Utf8String("123q");
+            cout << "Should be abc123q: " << new_string5 << endl;
+
+
             //concatenator operator 2
             //Utf8String new_string2 = string_a + my_string + new_string;
             //cout << "Size should be 44: " << new_string2.getSize() << endl;
