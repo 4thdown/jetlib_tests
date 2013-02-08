@@ -69,7 +69,7 @@ class Utf8StringTest{
 
 
             Utf8String shell_argument_example( "I'm a little teapot." );
-            cout << "Should be 'I\\'m a little teapot.': " << shell_argument_example.escapeShellArgument() << endl;
+            cout << "Should be 'I\'\\\'\'m a little teapot.': " << shell_argument_example.escapeShellArgument() << endl;
 
             //concatenator operator 2
             //Utf8String new_string2 = string_a + my_string + new_string;
