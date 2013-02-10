@@ -34,6 +34,26 @@ class DirectoryTest{
             delete directories;
 
 
+            if( Directory::isDirectory( "/tmp" ) ){
+                cout << "/tmp is a directory" << endl;
+            }else{
+                cout << "/tmp is not a directory" << endl;
+            }
+
+            if( Directory::isDirectory( Utf8String("/tmp") ) ){
+                cout << "/tmp is a directory" << endl;
+            }else{
+                cout << "/tmp is not a directory" << endl;
+            }
+
+            if( Directory::isDirectory("doggy") ){
+                cout << "doggy is a directory" << endl;
+            }else{
+                cout << "doggy is not a directory" << endl;
+            }
+
+
+
         }
 
 };
