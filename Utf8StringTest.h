@@ -117,6 +117,11 @@ class Utf8StringTest{
             cout << "Output should be abcdef " << Utf8String("a") + Utf8String("bc") + Utf8String("d") + Utf8String("ef") << endl;
 
 
+            std::vector<Utf8String> list = Utf8String("hello9_there_billy").split( '_' );
+            cout << "Output should be there " << list[1] << endl;
+            cout << "Output should be billy " << list[2] << endl;
+            cout << "Output should be 3 " << list.size() << endl;
+
         }
 
 };
