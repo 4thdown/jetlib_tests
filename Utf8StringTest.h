@@ -122,6 +122,14 @@ class Utf8StringTest{
             cout << "Output should be billy " << list[2] << endl;
             cout << "Output should be 3 " << list.size() << endl;
 
+
+            Utf8String number( 5 );
+            cout << "Output should be 5 " << number << endl;
+
+            Utf8String number2( 0 );
+            cout << "Output should be 0 " << number2 << endl;
+
+
         }
 
 };
