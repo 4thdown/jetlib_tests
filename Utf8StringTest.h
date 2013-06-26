@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <utility>
+#include <vector>
 
 using namespace jet;
 using namespace std;
@@ -128,6 +129,12 @@ class Utf8StringTest{
 
             Utf8String number2( 0 );
             cout << "Output should be 0 " << number2 << endl;
+
+
+            //String join
+            cout << "Output should be 1,2,3,4 " << Utf8String(",").join( {"1","2","3","4"} ) << endl;
+
+
 
 
         }
