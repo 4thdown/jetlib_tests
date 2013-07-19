@@ -135,6 +135,12 @@ class Utf8StringTest{
             cout << "Output should be 1,2,3,4 " << Utf8String(",").join( {"1","2","3","4"} ) << endl;
 
 
+            //Underscore case
+            cout << "Output should be what_is_my_name " << Utf8String("WhatIsMyName").toUnderscoreCase() << endl;
+            cout << "Output should be what_is_my_name " << Utf8String("What is My name").toUnderscoreCase() << endl;
+            cout << "Output should be what_is_my_name " << Utf8String("What is my name").toUnderscoreCase() << endl;
+            cout << "Output should be what_is_my_name " << Utf8String("what    is    my   name").toUnderscoreCase() << endl;
+            cout << "Output should be what_is_my_name " << Utf8String("what-is--my-Name").toUnderscoreCase() << endl;
 
 
         }
