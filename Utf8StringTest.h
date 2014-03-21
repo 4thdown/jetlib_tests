@@ -135,7 +135,8 @@ class Utf8StringTest{
             cout << "Output should be 1,2,3,4 " << Utf8String(",").join( {"1","2","3","4"} ) << endl;
 
 
-
+            Utf8String backslash( '\\' );
+            cout << "Output should be \\ " << backslash << endl;
 
         }
 
